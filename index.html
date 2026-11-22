@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#F6F6FB" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0B0B0E" media="(prefers-color-scheme: dark)">
+  <title>Mica Notes: notes that grow in threads</title>
+  <meta name="description" content="Mica Notes is a notes app for iPhone, iPad, Mac and Apple Watch where each idea gets its own thread, and you add to it as you think of more. Free, with iCloud sync.">
+  <link rel="canonical" href="https://shaswat28.github.io/mica-notes/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mica Notes">
+  <meta property="og:description" content="Small thoughts. A continuing thread. Threaded notes for iPhone, iPad, Mac and Apple Watch, free with iCloud sync.">
+  <meta property="og:url" content="https://shaswat28.github.io/mica-notes/">
+  <meta property="og:image" content="https://shaswat28.github.io/mica-notes/assets/social-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="./"><img src="assets/gem.svg" alt="" width="26" height="26">Mica Notes</a>
+    <nav class="site-nav" aria-label="Main">
+      <a class="nav-optional" href="#features">Features</a>
+      <a href="#plus">Plus</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <img class="gem-mark" src="assets/gem.svg" alt="" width="72" height="72">
+    <h1 id="hero-title">Small thoughts.<br>A continuing thread.</h1>
+    <p class="lead">Mica Notes is a notes app built around threads. Jot something down, and when you think of more later, add it to the same thread instead of starting a new note.</p>
+    <div class="actions">
+      <span class="status-pill">Coming soon to the App Store</span>
+      <a class="button button-quiet" href="#features">See the features</a>
+    </div>
+    <p class="small">Free on iPhone, iPad, Mac and Apple Watch, with iCloud sync included.</p>
+
+    <div class="showcase">
+      <div class="demo" data-theme="mica">
+        <div class="demo-bar">
+          <p class="demo-hint">Try it: open a thread, tick off a checklist, or add a note.</p>
+          <div class="theme-picker" role="group" aria-label="Demo theme">
+            <span>Theme</span>
+            <button class="swatch" data-theme="mica" style="--sw:#B4A2F7" aria-pressed="true" aria-label="Mica"></button>
+            <button class="swatch" data-theme="meadow" style="--sw:#8FCBAE" aria-pressed="false" aria-label="Meadow"></button>
+            <button class="swatch" data-theme="peach" style="--sw:#F2A57E" aria-pressed="false" aria-label="Peach"></button>
+            <button class="swatch" data-theme="lavender" style="--sw:#C9A8E2" aria-pressed="false" aria-label="Lavender"></button>
+            <button class="swatch" data-theme="buttercup" style="--sw:#E8C350" aria-pressed="false" aria-label="Buttercup"></button>
+            <button class="swatch" data-theme="sky" style="--sw:#8BC0E2" aria-pressed="false" aria-label="Sky"></button>
+          </div>
+        </div>
+        <div class="window" role="region" aria-label="Mica Notes demo">
+          <nav class="window-sidebar" aria-label="Demo sidebar">
+            <div class="traffic" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="side-group">
+              <button class="side-row" data-scope="inbox" aria-pressed="false"><svg class="side-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 11.5V15a1.5 1.5 0 0 0 1.5 1.5h11A1.5 1.5 0 0 0 17 15v-3.5M3 11.5l2-7A1.5 1.5 0 0 1 6.4 3.5h7.2A1.5 1.5 0 0 1 15 4.5l2 7M3 11.5h4a3 3 0 0 0 6 0h4"/></svg>Inbox<span class="count" data-count="inbox"></span></button>
+              <button class="side-row" data-scope="today" aria-pressed="false"><svg class="side-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3.2"/><path d="M10 2.2v1.9M10 15.9v1.9M2.2 10h1.9M15.9 10h1.9M4.5 4.5l1.3 1.3M14.2 14.2l1.3 1.3M4.5 15.5l1.3-1.3M14.2 5.8l1.3-1.3"/></svg>Today<span class="count" data-count="today"></span></button>
+              <button class="side-row" data-scope="pinned" aria-pressed="false"><svg class="side-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7.2 2.8h5.6M8.2 2.8v4.6L5.8 10.6h8.4l-2.4-3.2V2.8M10 10.6v6.6"/></svg>Pinned<span class="count" data-count="pinned"></span></button>
+              <button class="side-row" data-scope="reminders" aria-pressed="false"><svg class="side-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.2 13.6V9.2a4.8 4.8 0 0 1 9.6 0v4.4l1.5 1.6H3.7zM8.4 17.2a1.7 1.7 0 0 0 3.2 0"/></svg>Reminders<span class="count" data-count="reminders"></span></button>
+              <button class="side-row is-on" data-scope="all" aria-pressed="true"><svg class="side-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M2.6 4.6a2 2 0 0 1 2-2h6.2a2 2 0 0 1 2 2v3.1a2 2 0 0 1-2 2H6.6l-2.5 2V9.6a2 2 0 0 1-1.5-1.9z"/><path d="M14.6 7.6h.8a2 2 0 0 1 2 2v3.2a2 2 0 0 1-1.5 1.9v2l-2.5-2H9.6a2 2 0 0 1-2-2v-.9"/><path d="M10.4 12.3h4M10.4 10h2.4"/></svg>Active<span class="count" data-count="all"></span></button>
+            </div>
+            <div class="side-group">
+              <div class="side-label">Tags</div>
+              <button class="side-row" data-scope="tag:personal" aria-pressed="false"><span class="dot" style="background:var(--tag-1)"></span>Personal<span class="count" data-count="tag:personal"></span></button>
+              <button class="side-row" data-scope="tag:ideas" aria-pressed="false"><span class="dot" style="background:var(--tag-2)"></span>Ideas<span class="count" data-count="tag:ideas"></span></button>
+              <button class="side-row" data-scope="tag:reading" aria-pressed="false"><span class="dot" style="background:var(--tag-3)"></span>Reading<span class="count" data-count="tag:reading"></span></button>
+            </div>
+          </nav>
+          <div class="window-list">
+            <label class="visually-hidden" for="demo-search">Search the demo</label>
+            <input class="list-search" id="demo-search" type="search" placeholder="Search" autocomplete="off">
+            <div class="js-thread-list">
+              <div class="thread-card is-on"><b>A quieter morning</b><span>Bring a notebook next time.</span><span class="meta"><span class="dot" style="background:var(--tag-1)"></span><span>Personal · 3 notes</span></span></div>
+              <div class="thread-card"><b>Ideas for the studio</b><span>Warm light for evening work.</span><span class="meta"><span class="dot" style="background:var(--tag-2)"></span><span>Ideas · 2 notes</span></span></div>
+              <div class="thread-card"><b>Books to come back to</b><span>Keep a line worth reading twice.</span><span class="meta"><span class="dot" style="background:var(--tag-3)"></span><span>Reading · 2 notes</span></span></div>
+              <div class="thread-card"><b>Weekend bag</b><span>Light jacket</span><span class="meta"><span>Checklist · 1 of 3</span></span></div>
+            </div>
+          </div>
+          <div class="window-detail">
+            <div class="mobile-threads" role="group" aria-label="Threads"></div>
+            <div class="detail-body">
+              <div class="detail-head">
+                <h2 class="detail-title">A quieter morning</h2>
+                <button class="pin-btn" aria-pressed="true" aria-label="Unpin thread"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.2 3.3a1 1 0 0 1 1.4 0l4.1 4.1a1 1 0 0 1 0 1.4l-1.3 1.3a1 1 0 0 1-1 .25l-3.1 3.1.4 3.4a1 1 0 0 1-.3.8l-1 1a1 1 0 0 1-1.4 0l-3.2-3.2-4.5 4.5a.9.9 0 1 1-1.3-1.3l4.5-4.5-3.2-3.2a1 1 0 0 1 0-1.4l1-1a1 1 0 0 1 .8-.3l3.4.4 3.1-3.1a1 1 0 0 1 .25-1z"/></svg></button>
+              </div>
+              <div class="chips"><span class="chip"><span class="dot" style="background:var(--tag-1)"></span>Personal</span><span class="chip">Pinned</span></div>
+            </div>
+            <div class="timeline-scroll">
+              <ol class="timeline">
+                <li><p>Walk by the river before breakfast.</p><time>Tuesday at 7:10 AM</time></li>
+                <li><p>Left the phone in my bag. The first hour felt <strong>longer</strong>, in a good way.</p><time>Tuesday at 7:42 AM</time></li>
+                <li><p>Bring a notebook next time.</p><time>Today at 8:03 AM</time></li>
+              </ol>
+            </div>
+            <form class="composer">
+              <label class="visually-hidden" for="demo-note">New note</label>
+              <input id="demo-note" type="text" placeholder="Add to thread…" autocomplete="off" maxlength="280">
+              <button class="send" type="submit" aria-label="Add note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" aria-labelledby="how-title">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">How threads work</p>
+      <h2 id="how-title">Ideas rarely show up all at once.</h2>
+      <p class="lead">So you don’t have to finish a note in one go. A thread collects the pieces as they come, in order, each with the time you wrote it.</p>
+    </div>
+    <div class="story" data-reveal>
+      <ol class="story-steps">
+        <li class="story-step is-on" data-step="1">
+          <button type="button" class="story-btn" aria-pressed="true"><span class="step-num" aria-hidden="true">1</span><span class="story-btn-text">Write it down</span></button>
+          <p>Start a thread with a sentence, a link, a photo or a voice memo. On a Mac, <kbd>⌃</kbd><kbd>⌥</kbd><kbd>N</kbd> opens a capture window from whatever app you’re in.</p>
+        </li>
+        <li class="story-step" data-step="2">
+          <button type="button" class="story-btn" aria-pressed="false"><span class="step-num" aria-hidden="true">2</span><span class="story-btn-text">Add to it later</span></button>
+          <p>The next time it comes up, add a note to the same thread. Everything about that idea stays in one place, with the time you wrote each part.</p>
+        </li>
+        <li class="story-step" data-step="3">
+          <button type="button" class="story-btn" aria-pressed="false"><span class="step-num" aria-hidden="true">3</span><span class="story-btn-text">Find it again</span></button>
+          <p>Search looks through your notes, tags and the text in your photos. Review brings back threads you haven’t opened in a while.</p>
+        </li>
+        <li class="story-hint" aria-hidden="true">Don’t want to wait? Pick a step, or tap the preview to go to the next one.</li>
+      </ol>
+      <div class="story-stage" data-step="3" role="img" aria-label="A thread called Studio lamp. Monday: the desk is too dark after six, look for a lamp. Wednesday: a photo of a lamp at the market. Saturday: get a warm bulb. A search for lamp finds the first two, including the word in the photo.">
+        <div class="stage-bar">
+          <span class="stage-capture"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3 8h10"/></svg>Quick capture <kbd>⌃</kbd><kbd>⌥</kbd><kbd>N</kbd></span>
+          <span class="stage-search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5l3 3"/></svg><span class="stage-query">lamp</span><span class="caret"></span></span>
+        </div>
+        <p class="stage-title">Studio lamp <span class="stage-tag"><span class="dot" style="background:var(--tag-2)"></span>Ideas</span></p>
+        <ol class="stage-thread">
+          <li class="n1"><p>The desk is too dark after six. Look for a <mark>lamp</mark> with an arm.</p><time>Monday at 9:14 PM</time></li>
+          <li class="n2"><div class="stage-photo"><span class="photo-sign">BRASS ARM <mark>LAMP</mark> · $80</span></div><time>Wednesday at 12:41 PM · text found in photo</time></li>
+          <li class="n3"><p><b>Warm bulb</b>, 2700K. Not the blue-white one.</p><time>Saturday at 8:05 AM</time></li>
+        </ol>
+        <p class="stage-review"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="4" width="11" height="9" rx="2"/><path d="M4.5 2h7"/></svg>In Review: not opened for 3 weeks</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section wrap" aria-labelledby="features-title">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Features</p>
+      <h2 id="features-title">What you can do with it</h2>
+    </div>
+    <div class="feature-groups" data-reveal-group>
+      <article class="feature-group card">
+        <h3><span class="dot" style="background:var(--gem-1)" aria-hidden="true"></span>Writing</h3>
+        <div class="try" data-try="markdown">
+          <label class="try-label" for="try-md">Type some Markdown</label>
+          <input class="try-input" id="try-md" type="text" value="Get the **brass lamp** before Friday" maxlength="90" autocomplete="off" spellcheck="false">
+          <p class="md-out" aria-live="polite">Get the <span class="mk">**</span><b>brass lamp</b><span class="mk">**</span> before Friday</p>
+          <div class="try-chips" aria-label="Examples"><button type="button" data-fill="## Studio plans">Heading</button><button type="button" data-fill="- [ ] Order the bulbs">Checklist</button><button type="button" data-fill="Not *this* one, ~~the blue one~~">Italic and strike</button></div>
+        </div>
+        <ul class="feature-list">
+          <li><b>Markdown, lightly</b><span>Headings, lists, bold and links, formatted as you type.</span></li>
+          <li><b>Checklists</b><span>Tick off a single note, or turn a whole thread into a list.</span></li>
+          <li><b>Voice memos</b><span>Record when typing isn’t practical. Transcription happens on your device.</span></li>
+          <li><b>Photos</b><span>Add photos and screenshots. The app reads the text in them so search can find it.</span></li>
+        </ul>
+      </article>
+      <article class="feature-group card">
+        <h3><span class="dot" style="background:var(--gem-5)" aria-hidden="true"></span>Organizing</h3>
+        <div class="try" data-try="reminder">
+          <label class="try-label" for="try-rem">Type when to be reminded</label>
+          <input class="try-input" id="try-rem" type="text" value="tomorrow 9am" maxlength="40" autocomplete="off" spellcheck="false">
+          <p class="rem-out" aria-live="polite"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.2a3.8 3.8 0 0 0-3.8 3.8v2.6L3 10.6h10l-1.2-2V6A3.8 3.8 0 0 0 8 2.2zM6.6 12.4a1.5 1.5 0 0 0 2.8 0"/></svg><span class="rem-label">Tomorrow 9:00 AM</span></p>
+          <div class="try-chips" aria-label="Examples"><button type="button" data-fill="tonight 8pm">tonight 8pm</button><button type="button" data-fill="friday 6:30pm">friday 6:30pm</button><button type="button" data-fill="in 2 hours">in 2 hours</button></div>
+        </div>
+        <ul class="feature-list">
+          <li><b>Tags and pins</b><span>Tag related threads together and pin the ones you open every day.</span></li>
+          <li><b>Reminders you can type</b><span>Write “tomorrow 9am” instead of scrolling a date picker. Time Sensitive reminders can get through a Focus.</span></li>
+          <li><b>Review</b><span>Go through threads you haven’t looked at lately and keep, snooze or clear each one.</span></li>
+          <li><b>Move and merge</b><span>Put a note in a different thread, or combine two threads that turned out to be about the same thing.</span></li>
+        </ul>
+      </article>
+      <article class="feature-group card">
+        <h3><span class="dot" style="background:var(--gem-6)" aria-hidden="true"></span>Finding</h3>
+        <div class="try" data-try="search">
+          <label class="try-label" for="try-search">Search with filters</label>
+          <input class="try-input" id="try-search" type="search" value="has:photo lamp" maxlength="60" autocomplete="off" spellcheck="false">
+          <div class="try-chips" aria-label="Add a filter"><button type="button" data-token="tag:ideas">tag:ideas</button><button type="button" data-token="has:photo">has:photo</button><button type="button" data-token="has:voice">has:voice</button><button type="button" data-token="is:pinned">is:pinned</button></div>
+          <ul class="search-results" aria-live="polite">
+            <li data-tags="ideas" data-has="photo" data-text="studio lamp brass arm lamp market">Studio lamp <span>Photo · Ideas</span></li>
+            <li data-tags="personal" data-has="voice" data-pinned data-text="a quieter morning walk by the river">A quieter morning <span>Voice memo · Pinned</span></li>
+            <li data-tags="ideas" data-has="" data-text="name ideas for the newsletter">Newsletter names <span>Ideas</span></li>
+            <li data-tags="reading" data-has="photo voice" data-text="books to come back to lamp reading nook">Reading nook <span>Photo · Voice memo</span></li>
+          </ul>
+          <p class="search-count small" aria-hidden="true"></p>
+        </div>
+        <ul class="feature-list">
+          <li><b>Search filters</b><span>Narrow things down with <code>tag:</code>, <code>has:photo</code>, <code>has:voice</code>, <code>is:pinned</code> and dates.</span></li>
+          <li><b>Close matches</b><span>Search also turns up notes that are close in meaning, not only exact words. It runs on your device and it’s free.</span></li>
+          <li><b>Spotlight</b><span>Threads can show up in system search. You can switch that off.</span></li>
+          <li><b>Links between threads</b><span>Link one thread to another and follow the backlinks.</span></li>
+        </ul>
+      </article>
+      <article class="feature-group card">
+        <h3><span class="dot" style="background:var(--gem-3)" aria-hidden="true"></span>Getting a note in fast</h3>
+        <div class="try" data-try="capture">
+          <p class="try-label"><span class="fine-only">Press <kbd>⌃</kbd><kbd>⌥</kbd><kbd>N</kbd> or click the gem in the menu bar</span><span class="coarse-only">Tap the gem in the menu bar</span></p>
+          <div class="capture-desk">
+            <div class="mac-menubar" aria-hidden="false">
+              <span class="mb-left" aria-hidden="true"><b>Finder</b><span>File</span><span>Edit</span><span>View</span></span>
+              <span class="mb-right"><button type="button" class="mb-gem" aria-label="Quick Capture" aria-expanded="true"><img src="assets/gem.svg" alt="" width="16" height="16"></button><span class="mb-clock" aria-hidden="true">Sat 9:41 AM</span></span>
+            </div>
+            <form class="qc" aria-label="Quick Capture">
+              <div class="qc-head"><b>Quick Capture</b><button type="button" class="qc-btn qc-new">New Note</button></div>
+              <div class="qc-composer"><span class="qc-dot" aria-hidden="true"></span><label class="visually-hidden" for="try-cap">Quick capture draft</label><textarea id="try-cap" rows="3" maxlength="200" placeholder="Write a quick note…"></textarea></div>
+              <div class="qc-tools">
+                <span class="qc-tool" title="Choose a tag" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M8 3 6.5 17M13.5 3 12 17M3.5 7.5h14M3 12.5h14"/></svg></span>
+                <span class="qc-tool" title="Pin thread" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M7.2 2.8h5.6M8.2 2.8v4.6L5.8 10.6h8.4l-2.4-3.2V2.8M10 10.6v6.6"/></svg></span>
+                <span class="qc-tool" title="Insert checklist item" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="m3 5.2 1.4 1.4L7 4M3 12.2l1.4 1.4L7 11M9.5 5.5h7.5M9.5 12.5h7.5"/></svg></span>
+                <span class="qc-tool" title="Paste link" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M8.6 11.4a3 3 0 0 0 4.2 0l2.6-2.6a3 3 0 0 0-4.2-4.2l-1 1M11.4 8.6a3 3 0 0 0-4.2 0l-2.6 2.6a3 3 0 0 0 4.2 4.2l1-1"/></svg></span>
+                <span class="qc-btn qc-thread" aria-hidden="true">Add to thread…</span>
+              </div>
+              <div class="qc-foot">
+                <span class="qc-hint"><span class="keycap">↩</span><span class="qc-hint-text">to search</span></span>
+                <button type="submit" class="qc-done">Done <span class="keycap">↩</span></button>
+              </div>
+            </form>
+            <p class="capture-toast" role="status"></p>
+          </div>
+        </div>
+        <ul class="feature-list">
+          <li><b>iPhone and iPad</b><span>Widgets on the Home Screen and Lock Screen, Control Center, the Action button, and the share sheet in other apps.</span></li>
+          <li><b>Mac</b><span>A capture window from the menu bar or a hotkey, and <kbd>⌘</kbd><kbd>K</kbd> for the command palette.</span></li>
+          <li><b>Apple Watch</b><span>Record a voice memo on your wrist and it lands in your library on iPhone.</span></li>
+          <li><b>Siri and Shortcuts</b><span>Add a note without opening the app.</span></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section wrap" aria-labelledby="devices-title">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Devices</p>
+      <h2 id="devices-title">On all your Apple devices</h2>
+      <p class="lead">Each version is designed for the device it runs on, so the Mac app feels like a Mac app and the iPhone app fits in one hand.</p>
+    </div>
+    <ul class="devices" data-reveal-group>
+      <li class="card">
+        <svg class="device-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.5 5h3"/></svg>
+        <h3>iPhone</h3><p>Widgets, Control Center and the Action button all open straight to a new note.</p>
+      </li>
+      <li class="card">
+        <svg class="device-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3.5" y="3" width="17" height="18" rx="2.4"/><path d="M11 18.5h2"/></svg>
+        <h3>iPad</h3><p>Sidebar, thread list and thread on screen together, with room to read a long thread.</p>
+      </li>
+      <li class="card">
+        <svg class="device-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.8"/><path d="M8 20h8M12 16v4"/></svg>
+        <h3>Mac</h3><p>A native Mac app with keyboard shortcuts for most things and capture from the menu bar.</p>
+      </li>
+      <li class="card">
+        <svg class="device-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="3.4"/><path d="M8.5 6l.8-3.5h5.4l.8 3.5M8.5 18l.8 3.5h5.4l.8-3.5"/></svg>
+        <h3>Apple Watch</h3><p>A voice recorder for ideas that turn up when your phone is in your pocket.</p>
+      </li>
+    </ul>
+    <div class="sync-note card" data-reveal>
+      <p><strong>Sync is free.</strong> Notes, tags, photos and recordings sync through your own private iCloud storage, so there’s no separate account to sign up for. If you turn sync off, your notes stay on the device.</p>
+    </div>
+  </section>
+
+  <section class="wrap" aria-labelledby="privacy-title">
+    <div class="privacy-band" data-reveal>
+      <div class="privacy-head">
+        <p class="eyebrow">Privacy</p>
+        <h2 id="privacy-title">We can’t see your notes.</h2>
+        <p class="lead">There’s no Mica Notes server. Your notes are kept in two places, and both of them are yours.</p>
+      </div>
+      <ol class="places" data-reveal-group>
+        <li class="place">
+          <span class="place-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="13" height="9.5" rx="1.6"/><path d="M6 18h6M9 14.5V18"/><rect x="16.5" y="8" width="5" height="10" rx="1.3"/></svg></span>
+          <h3>Your devices</h3>
+          <p>Every note is stored on your iPhone, iPad and Mac, and works offline.</p>
+          <span class="place-tag is-yes">Your notes live here</span>
+        </li>
+        <li class="place">
+          <span class="place-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 18.5h10.5a4 4 0 0 0 .6-8 6 6 0 0 0-11.6 1.6A3.3 3.3 0 0 0 7 18.5z"/></svg></span>
+          <h3>Your iCloud</h3>
+          <p>Sync goes through your own private iCloud database. You can turn it off.</p>
+          <span class="place-tag is-yes">Private to your account</span>
+        </li>
+        <li class="place is-empty">
+          <span class="place-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="16" height="6.5" rx="1.6"/><path d="M3 21 21 3"/></svg></span>
+          <h3>Mica Notes</h3>
+          <p>No server and no account, so there’s nothing for us to read, sell or lose.</p>
+          <span class="place-tag">Nothing here</span>
+        </li>
+      </ol>
+      <ul class="privacy-points">
+        <li><b>No tracking</b><span>No analytics, ad code or anything else that reports on you.</span></li>
+        <li><b>AI on your device</b><span>Apple Intelligence on your device, and one switch turns it off.</span></li>
+        <li><b>Export any time</b><span>Save one thread or your whole library as Markdown files.</span></li>
+      </ul>
+      <a class="arrow-link" href="privacy.html">Read the privacy policy <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <section id="plus" class="section wrap" aria-labelledby="plus-title">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Pricing</p>
+      <h2 id="plus-title">Free, with an optional upgrade</h2>
+      <p class="lead">Everything above is free, sync included. Mica Plus is a single purchase for extra themes, alternate icons and the AI features.</p>
+    </div>
+    <div class="pricing" data-reveal-group>
+      <article class="plan card" aria-labelledby="free-title">
+        <h3 class="plan-name" id="free-title">Mica Notes</h3>
+        <p class="price">Free</p>
+        <p>The whole app, with no time limit or note limit.</p>
+        <ul class="ticks">
+          <li>Threads, tags, pins and checklists</li>
+          <li>iCloud sync across iPhone, iPad and Mac</li>
+          <li>Voice memos, photos and on-device transcription</li>
+          <li>Search, including close matches</li>
+          <li>Reminders, Review, widgets and Shortcuts</li>
+          <li>App Lock, backups and Markdown export</li>
+          <li>Seven themes</li>
+        </ul>
+        <ul class="swatches" aria-label="Free themes">
+          <li>Mica</li><li>Plain</li><li>Meadow</li><li>Peach</li><li>Lavender</li><li>Buttercup</li><li>Sky</li>
+        </ul>
+      </article>
+      <article class="plan plus card" aria-labelledby="plus-plan-title">
+        <h3 class="plan-name" id="plus-plan-title">Mica Plus</h3>
+        <p class="price">$4.99 <small>once</small></p>
+        <p>Pay once and keep it. Family Sharing is on, so your family gets it too.</p>
+        <ul class="ticks">
+          <li>The theme editor, with saved presets</li>
+          <li>Five more themes <span>(Oil slick, Ember, Lagoon, Dusk and Pearl)</span></li>
+          <li>Alternate app icons</li>
+          <li>Suggested tags and AI rules for each tag</li>
+          <li>Related threads <span>(the AI runs on your device)</span></li>
+        </ul>
+        <ul class="icon-row" aria-label="Alternate app icons">
+          <li><img src="assets/icon-ember.svg" alt="" width="48" height="48">Ember</li>
+          <li><img src="assets/icon-lagoon.svg" alt="" width="48" height="48">Lagoon</li>
+          <li><img src="assets/icon-dusk.svg" alt="" width="48" height="48">Dusk</li>
+          <li><img src="assets/icon-pearl.svg" alt="" width="48" height="48">Pearl</li>
+          <li><img src="assets/icon-plain.svg" alt="" width="48" height="48">Plain</li>
+        </ul>
+      </article>
+    </div>
+    <p class="small" style="margin-top:1rem">Price in US dollars; the App Store shows your local price. AI features need a device that supports Apple Intelligence, with it turned on.</p>
+  </section>
+
+  <section class="section wrap" aria-labelledby="faq-title" style="padding-top:0">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Questions</p>
+      <h2 id="faq-title">Common questions</h2>
+    </div>
+    <div class="faq-grid" data-reveal-group>
+      <article class="card"><h3>Does it work offline?</h3><p>Yes. You can write, read, record and search without a connection, and changes sync when you’re back online.</p></article>
+      <article class="card"><h3>What if I stop syncing?</h3><p>Your notes stay on the device. Turning sync off, signing out of iCloud or getting a refund doesn’t delete anything.</p></article>
+      <article class="card"><h3>Can I move my notes elsewhere?</h3><p>Yes. Export a thread or everything as Markdown, and set up automatic backups in Settings.</p></article>
+    </div>
+    <p style="margin-top:1.5rem" data-reveal><a class="arrow-link" href="support.html">More answers on the support page <span aria-hidden="true">→</span></a></p>
+  </section>
+
+  <section class="section wrap closing" aria-labelledby="closing-title" data-reveal>
+    <img src="assets/icon-default.svg" alt="" width="64" height="64" style="border-radius:22%">
+    <h2 id="closing-title">Coming soon to the App Store</h2>
+    <p class="lead">Mica Notes is on its way for iPhone, iPad, Mac and Apple Watch. If you have a question before then, send an email.</p>
+    <div class="actions">
+      <a class="button button-primary" href="mailto:micanotes.support@gmail.com">Email us</a>
+      <a class="button button-quiet" href="support.html">Support</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-brand">
+      <a class="wordmark" href="./"><img src="assets/gem.svg" alt="" width="26" height="26">Mica Notes</a>
+      <p>Small thoughts. A continuing thread.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="./#features">Features</a>
+      <a href="./#plus">Plus</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="mailto:micanotes.support@gmail.com">Contact</a>
+    </nav>
+    <p class="footer-legal">© 2026 Mica Notes. Apple, iPhone, iPad, Mac, Apple Watch, iCloud and Apple Intelligence are trademarks of Apple Inc.</p>
+  </div>
+</footer>
+</body>
+</html>
