@@ -260,8 +260,6 @@ p + p { margin-top: .9rem; }
 .js .story-step { cursor: pointer; }
 .js .story-step:hover { opacity: .8; background: color-mix(in srgb, var(--surface) 60%, transparent); }
 .js .story-stage { cursor: pointer; }
-.story-hint { margin-top: .4rem; padding-inline: 1.1rem; font-size: .84rem; color: var(--faint); }
-@media (max-width: 760px) { .story-hint { padding-inline: .9rem; } }
 .js .story-step.is-on { opacity: 1; background: var(--surface); box-shadow: var(--shadow); }
 .js .story-step.is-on .step-num { transform: scale(1.08); }
 .story-step::after { content: ""; position: absolute; left: 1.1rem; right: 1.1rem; bottom: 0; height: 2px; border-radius: 2px; background: var(--link); transform-origin: 0 50%; transform: scaleX(0); opacity: 0; }
